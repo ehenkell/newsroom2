@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,23 +22,75 @@
     h2 {
       color: #211d80;
       text-align: center;
-       font-size: 30px;
+      font-size: 30px;
     }
 
-    img {
+    h3 {
+      color: #211d80;
+      font-size: 23px;
+      margin-top: 35px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .lead-image {
+      display: block;
       width: 300px;
-      margin: 10px;
+      margin: 20px auto;
     }
 
-    canvas {
-      max-width: 700px;
-      margin-bottom: 30px;
+    .article {
+      max-width: 900px;
+      margin: 30px auto;
+      line-height: 1.7;
+      font-size: 17px;
     }
-      p  {
-         text-align: center;
+
+    .article p {
+      text-align: left;
+      margin-bottom: 20px;
     }
+
+    .article-image {
+      width: 280px;
+      float: right;
+      margin: 10px 0 20px 25px;
+    }
+
+    .article-image-left {
+      width: 280px;
+      float: left;
+      margin: 10px 25px 20px 0;
+    }
+
+    .article a {
+      color: #211d80;
+      text-decoration: underline;
+    }
+
+    .article a:hover {
+      color: #6965b5;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .sources {
+      max-width: 900px;
+      margin: 40px auto;
+      line-height: 1.8;
+    }
+
+    .sources h3 {
+      text-align: left;
+    }
+
   </style>
 </head>
+
 <body>
 
   <h1>Newsroom 2</h1>
@@ -46,14 +99,17 @@
     Emily Henkell and Olivia Lahm
   </p>
 
-  <h2> Literacy Crisis Rising due to ChatGPT 
- </h2>
+  <h2>Literacy Crisis Rising Due to ChatGPT</h2>
+
+  <!-- First image: centered underneath the title -->
 
   <img
-    src="https://i.ibb.co/yc71npgq/chatgpt-convo.png" 
-    alt="ChatGPT convo"
+    src="https://i.ibb.co/yc71npgq/chatgpt-convo.png"
+    alt="ChatGPT conversation"
+    class="lead-image"
   >
-   <div class="article">
+
+  <div class="article">
 
     <h3>The Launch of ChatGPT</h3>
 
@@ -97,6 +153,8 @@
       Every time a student opens ChatGPT, their level of creative thinking slightly diminishes.
     </p>
 
+    <!-- Second image: wraps text on the right -->
+
     <img
       src="https://journal.imse.com/wp-content/uploads/2019/08/stat-2.png"
       alt="Literacy statistics"
@@ -109,6 +167,16 @@
       <a href="https://medium.com/@alexwritingandothers/the-literacy-crisis-no-one-wants-to-talk-about-422b62366f3e">79%; the last time the rate was this low was during the 1870’s</a>.
       Additionally, many schools don’t have technology regulations regarding AI or have only reinforced them recently. This has taken away students' ability to be creative and turn in an assignment they actually worked hard on. Not to mention, ¼ of eighth graders are below their appropriate reading level and are currently struggling to summarize a reading’s main ideas into a few sentences. When given an assignment that requires excessive reading or writing, students often go straight to ChatGPT. This takes away the time they need to absorb new information and engage in critical thinking, and the opportunity to create new ideas on their own is taken away. If students continue using ChatGPT the way they currently do, literacy rates are projected to only get worse.
     </p>
+
+    <div class="clear"></div>
+
+    <!-- Third image: wraps text on the left -->
+
+    <img
+      src="https://beyondbasics.org/wp-content/uploads/2026/02/Americas-Reading-Crisis-That-No-One-Wants-to-Talk-About.webp"
+      alt="America's reading crisis"
+      class="article-image-left"
+    >
 
     <p>
       Fox
